@@ -1,0 +1,86 @@
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Stiluri pentru titluri */
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Stiluri pentru secțiunile de formular */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Stiluri pentru buton */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Stiluri pentru lista de iteme */
+#item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Stiluri pentru cardurile itemelor */
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item h3 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.item button {
+    margin-top: 10px;
+}
+
+/* Stiluri pentru butoanele din card */
+.item button {
+    background-color: #e74c3c;
+}
+
+.item button:nth-child(1) {
+    background-color: #2ecc71;
+}
+
+.item button:hover {
+    opacity: 0.9;
+}

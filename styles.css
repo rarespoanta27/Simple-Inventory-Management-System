@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1e1e2f;
+    color: #f0f0f5;
+}
+
+h1, h2 {
+    color: #f5a623;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(145deg, #23233b, #1a1a2e);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4), inset 0 4px 6px rgba(255, 255, 255, 0.05);
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input, form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #292943;
+    color: #f0f0f5;
+    outline: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form input:focus {
+    background-color: #3b3b5d;
+}
+
+button {
+    background-color: #f5a623;
+    color: #1e1e2f;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(245, 166, 35, 0.4);
+}
+
+button:hover {
+    background-color: #d48816;
+    box-shadow: 0 6px 12px rgba(245, 166, 35, 0.6);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background: linear-gradient(145deg, #23233b, #1a1a2e);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.item h3 {
+    margin-top: 0;
+    color: #f5a623;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.item p {
+    margin: 5px 0;
+    color: #d1d1e0;
+}
+
+.item button {
+    background-color: #29a19c;
+    color: #1e1e2f;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(41, 161, 156, 0.4);
+}
+
+.item button:hover {
+    background-color: #218782;
+    box-shadow: 0 6px 12px rgba(41, 161, 156, 0.6);
+}
+
+.item button:nth-child(1) {
+    background-color: #f39c12;
+    box-shadow: 0 4px 8px rgba(243, 156, 18, 0.4);
+}
+
+.item button:nth-child(1):hover {
+    background-color: #d48816;
+    box-shadow: 0 6px 12px rgba(243, 156, 18, 0.6);
+}
